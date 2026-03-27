@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin By Kalla</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f5f0eb;
+      --surface: #ede7e0;
+      --border: #d9d0c7;
+      --border-btn: #b0a49c;
+      --text: #1a1210;
+      --muted: #5c4f4b;
+      --accent: #7d3f53;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .card {
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      padding: 0 0 2rem;
+    }
+
+    /* Avatar */
+    .avatar-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 1px solid var(--border-btn);
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .avatar svg {
+      width: 96px;
+      height: 96px;
+    }
+
+    /* Name & role */
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .role {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .tagline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--accent);
+      margin-bottom: 2.25rem;
+    }
+
+    /* Buttons */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link-btn {
+      display: block;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border: 1px solid var(--border-btn);
+      border-radius: 3px;
+      background: transparent;
+      color: var(--text);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    }
+
+    .link-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(125, 63, 83, 0.06);
+    }
+
+    .link-btn:active {
+      background: rgba(125, 63, 83, 0.12);
+    }
+
+    /* Specialty note */
+    .specialty {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+
+    /* Services */
+    .services {
+      margin-bottom: 2.25rem;
+    }
+
+    .services-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.85rem;
+    }
+
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.45rem;
+    }
+
+    .service-tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.3rem 0.7rem;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="avatar-wrap">
+      <div class="avatar">
+        <svg viewBox="0 0 96 96" width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="48" cy="48" r="42" fill="none" stroke="#b0a49c" stroke-width="0.75"/>
+          <text x="48" y="57" font-family="Cormorant Garamond, Georgia, serif" font-size="38" font-weight="400" fill="#7d3f53" text-anchor="middle">K</text>
+        </svg>
+      </div>
+    </div>
+
+    <h1>Kalla</h1>
+    <p class="role">Licensed Esthetician</p>
+    <p class="tagline">Your skin. Elevated.</p>
+
+    <div class="services">
+      <p class="services-label">Services</p>
+      <div class="services-list">
+        <span class="service-tag">Facials</span>
+        <span class="service-tag">Head Spa</span>
+        <span class="service-tag">Waxing</span>
+        <span class="service-tag">Brow &amp; Lash Tint</span>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="link-btn" href="https://www.phorest.com/salon/williamhenrythespa/book/services?staffId=Jgvo5oQ7EPRCQ1KzkQEWrw" target="_blank" rel="noopener noreferrer">
+        Book Your Experience
+      </a>
+    </div>
+  </div>
+
+    <p class="specialty">Specializing in lymphatic drainage and sculpting facial massage</p>
+
+  <div style="color:var(--accent);font-size:1.5rem;">&#9825;</div>
+
+  <footer>&copy; 2026 KALLA LLC.</footer>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e2aab7b2da01859',t:'MTc3NDU3NTQ0Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
